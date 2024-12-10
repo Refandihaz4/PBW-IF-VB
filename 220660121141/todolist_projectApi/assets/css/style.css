@@ -18,12 +18,10 @@ body {
     border-radius: 8px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-    color: #333;
 }
 
-/* Daftar tugas */
 ul {
     list-style: none;
     padding: 0;
@@ -35,25 +33,23 @@ li {
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
-    overflow: hidden;
 }
 
-li:last-child {
-    border-bottom: none;
+.notification {
+    background-color: #e3f7e3;
+    color: #0c6b0f;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    margin-bottom: 15px;
 }
 
-/* Teks Tugas */
 .task-text {
     flex: 1;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-
-/* Form edit tugas */
-form {
-    display: inline;
-    margin-left: 30px;
 }
 
 .edit-input {
@@ -65,7 +61,6 @@ form {
     max-width: 150px;
 }
 
-/* Tombol */
 button {
     color: #fff;
     border: none;
@@ -75,45 +70,20 @@ button {
     font-size: 0.9em;
 }
 
-.complete-button:hover {
-    background-color: #45a049;
-}
-
-.update-button{
-    background-color: #bdb216;
-}
-
-.update-button:hover {
-    background-color: #a59c16;
-}
-.update-button, .complete-button, .delete-button {
-    margin-left: 2px;
-}
-
-.delete-button {
-    background-color: #c53636;
-}
-
-.delete-button:hover {
-    background-color: #de2b2b;
+.update-button {
+    background-color: #190dca;
 }
 
 .complete-button {
-    background-color: #4CAF50;
+    background-color: #095e0b;
 }
 
-.submit-button {
-    background-color: #4CAF50;
+.delete-button {
+    background-color: #e65b5b;
 }
 
-.submit-button:hover {
-    background-color: #45a049;
-}
-
-/* Tambah tugas */
 .add-task {
     margin-top: 20px;
-    margin-left: 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +96,6 @@ button {
 .add-task button {
     width: 18%;
     padding: 10px;
-    margin-left: 10px;
 }
 
 .completed span {
